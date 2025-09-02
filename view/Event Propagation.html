@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+<!-- 
+<input type="checkbox" id='box'>
+<button id="button">click</button>
+<script>
+    let button=document.getElementById('button');
+    let box=document.getElementById('box');
+    button.addEventListener("click",()=>{
+        box.checked=!box.checked;
+    })
+</script> -->
+
+
+
+
+<!--1. Event Delegation -->
+<!-- 
+ <ul id="itemList">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ul> 
+ 
+<script>
+    document.getElementById('itemList').addEventListener('click', function(event) {
+        if (event.target.tagName === 'LI') {
+            alert('You clicked on ' + event.target.textContent);
+        }
+    });
+</script> 
+
+ -->
+
+
+<!-- 3. Event Bubbling -->
+
+<!-- 
+<div id="outerDiv">
+    <div id="innerDiv">
+        Click me!
+    </div>
+</div>
+
+<script>
+    document.getElementById('innerDiv').addEventListener('click', function() {
+        alert('Inner div clicked!');
+    });
+
+    document.getElementById('outerDiv').addEventListener('click', function() {
+        alert('Outer div clicked!');
+    });
+</script> 
+
+ -->
+
+
+
+
+
+<!-- 4. Event Capturing -->
+
+
+<!-- 
+    
+<div id="outerDiv">
+    <div id="innerDiv">
+        Click me!
+    </div>
+</div>
+
+<script>
+    // Event listener on the outer div (with capturing phase enabled)
+    document.getElementById('outerDiv').addEventListener('click', function() {
+        alert('Outer div captured!');
+    }, true);  // The 'true' argument here enables capturing phase
+
+    // Event listener on the inner div
+    document.getElementById('innerDiv').addEventListener('click', function() {
+        alert('Inner div clicked!');
+    });
+</script> -->
+
+
+
+
+
+
+<!-- 
+<title>Disable Right Click</title>
+<script>
+document.addEventListener('contextmenu',function(event){
+    event.preventDefault()
+}) 
+</script>
+ -->
+
+
+
+ 
+</body>
+</html>
